@@ -1,0 +1,30 @@
+{
+  "name": "simple-crm",
+  "version": "1.0.0",
+  "description": "Zarządzanie kontaktami: Możliwość przechowywania podstawowych danych kontaktowych klientów, takich jak imię, nazwisko, adres e-mail i numer telefonu.",
+  "main": "vite.config.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx webpack",
+    "build:watch": "npx webpack --watch",
+    "dev": "postcss resources/css/styles.css -o public/css/main.css --watch",
+    "prod": "cross-env NODE_ENV=production postcss resources/css/styles.css -o public/css/main.css",
+    "git": "git subtree push --prefix dist origin gh-pages"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "cross-env": "^7.0.3",
+    "postcss": "^8.4.38",
+    "postcss-cli": "^11.0.0",
+    "postcss-import": "^16.1.0",
+    "tailwindcss": "^3.4.1",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
